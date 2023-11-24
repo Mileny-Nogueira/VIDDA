@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidda</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav id="menu-lateral">
+        <div id="header-menu">
+            <img src="src/images/logo-vidda.png" alt="imagem da logo com fundo cinza escuro">
+            <div>
+                <h1>VIDDA</h1>
+                <h2>AGENDAMENTOS & CONSULTAS</h2>
+            </div>
+        </div>
+        <ul class="lista-paginas">
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><img src="src/images/iconHome.png" alt="ícone de casa"></span>
+                    <span class="txt-link">HOME</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><img src="src/images/iconAgenda.png" alt="ícone de agenda"></span>
+                    <span class="txt-link">AGENDAR</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><img src="src/images/iconInfo.png" alt="ícone de informações"></span>
+                    <span class="txt-link">INFORMAÇÕES</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><img src="src/images/iconDuvidas.png" alt="ícone de dúvida"></span>
+                    <span class="txt-link">DÚVIDAS</span>
+                </a>
+            </li>
+        </ul>
+        <hr/>
+        <ul class="footer-menu">
+            <p>LOGIN</p>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><img src="src/images/iconPaciente.png" alt="ícone de paciente que leva ao login"></span>
+                    <span class="txt-link" style="color:#025AB0;">PACIENTE</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><img src="src/images/iconEspecialista.png" alt="ícone de especialista que leva ao login"></span>
+                    <span class="txt-link" style="color:#FF3D93;">ESPECIALISTA</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <img src="src/images/setaMenu.png" alt="seta que ao ser clicada expande o menu lateral" id="btnMenu">
+    <section class="especialidades">
+        <h1>Qual especialidade você procura?</h1>
+        <input type="search" id="inputBusca" maxlength="15" placeholder="Digite o nome da especialidade">
+        <div id="resultados"></div>
+        <div class="grupo-especialidades">
+            <article class="card">
+                <h2>NUTRIÇÃO</h2>
+                <p>Atendimento para escolhas alimentares saudáveis, planejamento de refeições e informações sobre nutrição, visando aprimorar a saúde e o bem-estar.</p>
+                <a href="#">AGENDAR</a>
+            </article>
+            <article class="card">
+                <h2>SERVIÇO SOCIAL</h2>
+                <p>Assistência social a indivíduos vulneráveis e identificação de necessidades.</p>
+                <a href="">AGENDAR</a>
+            </article>
+            <article class="card">
+                <h2>PSICOLOGIA</h2>
+                <p>Consultas para suporte emocional, avaliações, tratamento de doenças mentais, distúrbios emocionais e promoção da saúde mental.</p>
+                <a href="">AGENDAR</a>
+            </article>
+            <article class="card">
+                <h2>NEUROLOGIA</h2>
+                <p>Serviço para avaliação diagnóstica, tratamento medicamentoso e terapia medicamentosa</p>
+                <a href="">AGENDAR</a>
+            </article>
+            <article class="card">
+                <h2>EDUCAÇÃO FÍSICA</h2>
+                <p>Aulas para desenvolver atividades motoras diversificadas de acordo com interesses, capacidades e limitações do paciente.</p>
+                <a href="">AGENDAR</a>
+            </article>
+            <article class="card">
+                <h2>PEDAGOGIA</h2>
+                <p>Desenvolvimento humano por meio de orientação educacional e apoio à aprendizagem.</p>
+                <a href="">AGENDAR</a>
+            </article>
+            <article class="card">
+                <h2>FONOAUDIOLOGIA</h2>
+                <p>Atendimento para avaliação, orientação e reabilitação nas áreas de deglutição, motricidade oral, comunicação e linguagem dos pacientes.</p>
+                <a href="">AGENDAR</a>
+            </article>
+            <article class="card">
+                <h2>ENFERMAGEM</h2>
+                <p>Assistência básicas ao paciente de forma individualizada. </p>
+                <a href="">AGENDAR</a>
+            </article>
+        </div>
+    </section>
+    <section class="informacoes">
+        <div class="colInfo">
+            <header>
+                <img src="src/images/iconLocalizacao.png" alt="ícone de localização">
+                <h2>LOCALIZAÇÃO</h2>
+            </header>
+            <p>Estr. Mun. Jucá Sanches,<br/>Estancia Parque de Atibaia, Atibaia/SP</p>
+        </div>
+        <div class="colInfo">
+            <header>
+                <img src="src/images/iconGratuito.png" alt="ícone de gratuito">
+                <h2>GRATUIDADE</h2>
+            </header>
+            <p>Agende uma consulta com profissionais especializados, tudo isso no conforto do seu lar e sem nenhum custo.</p>
+        </div>
+        <div class="colInfo">
+            <header>
+                <img src="src/images/iconInternet.png" alt="ícone de internet">
+                <h2>AGENDAMENTO</h2>
+            </header>
+            <p>Facilitamos o processo de agendamento, totalmente online. Apenas realize um cadastro simples e escolha o melhor dia e horário.</p>
+        </div>
+    </section>
+    <section class="faq">
+        <h1>FAQ</h1>
+        <h2>PERGUNTAS FREQUENTES</h2>
+        <div class="container-details">
+            <details>
+                <summary>QUANTO TEMPO DEVO CHEGAR ANTES NA UNIDADE?</summary>
+                <p>O paciente deve chegar com quinze minutos de antecedência na unidade.</p>
+            </details>
+            <details>
+                <summary>É PERMITIDO LEVAR ACOMPANHANTES NO ATENDIMENTO?</summary>
+                <p>Sim, pessoas menores de dezoito anos devem estar acompanhadas dos seus responsáveis.</p>
+            </details>
+            <details>
+                <summary>QUAL É O HORÁRIO DE FUNCIONAMENTO?</summary>
+                <p>O horário de funcionamento é das <span style="font-family: Arial, Helvetica, sans-serif;color: #383838;">08:00</span> as <span style="font-family: Arial, Helvetica, sans-serif;color: #383838;">17:30</span>.</p>
+            </details>
+            <details>
+                <summary>É NECESSÁRIO PEDIDO MÉDICO?</summary>
+                <p>Sim, os exames realizados pela Casa de David necessitam de uma solicitação médica feita pelo profissional.</p>
+            </details>
+            <details>
+                <summary>O ATENDIMENTO GRATUITO É SOMENTE PARA PESSOAS AUTISTAS?</summary>
+                <p>Sim, a Vidda foi especialmente designada para atender às necessidades de pessoas com Transtorno do Espectro Autista (TEA) na região de Atibaia, que buscam serviços na Casa de David, uma instituição filantrópica com mais de seis décadas de dedicação ao atendimento gratuito.</p>
+            </details>
+            <details>
+                <summary>QUAIS DOCUMENTOS EU PRECISO APRESENTAR?</summary>
+                <p>Na realização de exames e consultas você precisa portar os seguintes documentos:</p>
+                <ul>
+                    <li>RG;</li>
+                    <li>CPF;</li>
+                    <li>Cartão Nacional de Saúde;</li>
+                </ul>
+            </details>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

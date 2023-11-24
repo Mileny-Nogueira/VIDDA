@@ -1,0 +1,304 @@
+@import url('https://fonts.cdnfonts.com/css/antipasto-pro');
+@import url('https://fonts.cdnfonts.com/css/simply-rounded');
+                
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    background-color: #E6E6E6;
+    padding-left: 60px;
+    overflow-x: hidden;
+}
+
+/*MENU LATERAL*/
+#menu-lateral{
+    width: 60px;
+    height: 90%;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 20px 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
+}
+
+#menu-lateral.expandir{
+    width: 300px;
+}
+
+#header-menu{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #D9D9D9;
+    width: 90%;
+}
+
+#header-menu > div{
+    margin-left: 10px;
+}
+
+#header-menu > div > h1{
+    font-family: 'Simply Rounded', sans-serif;
+    font-size: 25px;
+    color: #383838;
+}
+
+#header-menu > div > h2{
+    font-family: 'Antipasto Pro', sans-serif;
+    font-size: 15px;
+    color: #A2A2A2;
+}
+
+.lista-paginas{
+    list-style-type: none;
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.item-menu > a{
+    color: #383838;
+    font-family: 'Antipasto Pro', sans-serif;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.item-menu{
+    padding: 10px 0;
+}
+
+.txt-link{
+    margin-left: 10px;
+}
+
+#menu-lateral > hr{
+    width: 90%;
+    border-bottom: 1px solid #D9D9D9;
+    margin: 20px 0;
+}
+
+.footer-menu{
+    width: 90%;
+    list-style-type: none;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.footer-menu > p{
+    background-color: #FF9E43;
+    position: absolute;
+    top: -37px;
+    left: 100px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    color: #FFF;
+    font-family: 'Antipasto Pro', sans-serif;
+    font-size: 20px;
+}
+
+.footer-menu > .item-menu > a > .icon{
+    margin-left: 6px;
+}
+
+.footer-menu > .item-menu{
+    width: 190px;
+}
+
+#btnMenu{
+    position: fixed;
+    left: 70px;
+    top: 10px;
+    cursor: pointer;
+    transform: rotate(0deg);
+}
+
+/*SECTION ESPECIALIDADES*/
+.especialidades{
+    width: 100%;
+    margin: 50px 0 50px 50px;
+    font-family: 'Antipasto Pro', sans-serif;
+}
+
+.especialidades > h1{
+    font-size: 30px;
+}
+
+#inputBusca{
+    background-color: transparent;
+    border-radius: none;
+    border-bottom: 1px solid #383838;
+    outline: none;
+    background-image: url('src/images/iconPesquisa.png');
+    background-position: inherit;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 2.5px 0 2.5px 30px;
+    font-family: 'Antipasto Pro', sans-serif;
+    font-size: 15px;
+    margin: 20px 0 0 20px;
+    width: 235px;
+}
+
+#resultados > .card{
+    background-color: #383838;
+}
+
+#resultados > .card :is(h2, p){
+    color: #FFF;
+}
+
+.grupo-especialidades {
+    margin: 20px 0 0 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    height: auto;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.card > h2{
+    font-size: 20px;
+    color: #383838;
+}
+
+.card > p{
+    font-size: 15px;
+    color: #383838;
+}
+
+.card > a{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FE4751;
+    color: #FFF;
+    padding: 8px 30px;
+    border-radius: 50px;
+}
+
+/*SECTION INFORMAÇÕES*/
+.informacoes{
+    height: 300px;
+    background-color: #FE4751;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.colInfo{
+    width: 33.3%;
+    height: 80%;
+    border-right: 1px solid #FFF;
+    font-family: 'Antipasto Pro', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.colInfo > header{
+    background-color: #f7f7f7;
+    color: #FE4751;
+    width: 230px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px;
+}
+
+.colInfo > header > h2{
+    font-size: 28px;
+    text-align: center;
+}
+
+.colInfo > p{
+    font-size: 22px;
+    color: #f7f7f7;
+    text-align: center;
+    width: 80%;
+    height: 130px;
+}
+
+/*SECTION FAQ*/
+.faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq > h1{
+    color: #FE4751;
+    font-size: 45px;
+    font-family: 'Antipasto Pro', sans-serif;
+    margin-top: 50px;
+}
+
+.faq > h2{
+    color: #383838;
+    font-size: 20px;
+    font-family: 'Antipasto Pro', sans-serif;
+    margin: 5px 0 10px 0;
+}
+
+.container-details{
+    margin-bottom: 50px;
+}
+
+.container-details > details > summary{
+    background-color: #f7f7f7;
+    margin: 10px 0;
+    padding: 15px 10px;
+    border-radius: 5px;
+    font-family: 'Antipasto Pro', sans-serif;
+    font-size: 20px;
+    color: #383838;
+    list-style-type: none;
+    max-width: 600px;
+}
+
+summary::before{
+    content: url('src/images/setaFaq.png');
+    margin-right: 5px;
+}
+
+.container-details > details > :is(p, ul) {
+    font-family: 'Antipasto Pro', sans-serif;
+    font-size: 15px;
+    max-width: 550px;
+    text-align: justify;
+    padding: 10px;
+}
