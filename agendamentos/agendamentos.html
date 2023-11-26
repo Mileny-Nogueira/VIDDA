@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vidda</title>
+        <link rel="stylesheet" href="agendamentos.css">
+    </head>
+    <body>
+        <input type="checkbox"  id="check">
+        <label for="check">
+
+            <div class="menu">
+                <span class="hamburguer"></span>
+            </div>
+        </label>
+
+        <div class="barra">
+            <img src="imagens/logo.png" id="logo" alt="Vidda" width="50" height="50" title="Vidda"/>
+            <h2 class="ViddaBarra">VIDDA</h2>
+            <h4 class="Subtitle">AGENDAMENTOS & CONSULTAS</h4>
+            <hr size="1" width="95%">
+            <div class="itens-barra">
+                <button class="btn-agendamentos">AGENDAMENTOS</button>
+            
+                <br> 
+                <br>
+                <button class="btn-agendar">AGENDAR CONSULTAS</button>
+            </div>
+        </div>
+    
+        <h2 id="agendamentos">AGENDAMENTOS</h2>
+   
+        <script type="text/javascript" src="agendamentos.js"></script>
+
+        <div id = "DadosPaciente" class="Tabela">
+            <form name = "form1">
+                <div class="pt1">
+                    <p class="nome">Nome:</p>     
+                    <p class="telefone">Celular:</p>  
+                    <p class="dn">Data de nascimento:</p>
+                </div>        
+                <div class="pt2">
+                    <p class="email">E-mail:</p>  
+                    <p class="cpf">CPF:</p>
+                </div>       
+                         
+         
+                <hr size="1" width="100%">      
+                <div id="HistoricoAgendamentos"><h3>HISTÓRICO DE AGENDAMENTOS</h3></div>
+                        
+                </div>
+        
+            </form>  
+        </div>
+
+    </body>
+</html>

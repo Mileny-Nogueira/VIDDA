@@ -1,0 +1,237 @@
+@import url('https://fonts.cdnfonts.com/css/antipasto-pro');
+@import url('https://fonts.cdnfonts.com/css/simply-rounded');
+*{box-sizing: border-box ;}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#d9d9d9;
+}        
+
+h2{
+    font-family: 'Antipasto Pro';
+    color: #383838; 
+    font-size: 40px;
+    margin-left: 10%;
+    margin-top: 5%;
+    
+}
+
+
+
+h3 {
+    font-family: 'Antipasto Pro';
+    font-size: 25px;
+    color: #383838; 
+    height: 29px;
+    width: 414px;
+    margin-left: 38%;
+    margin-top: 2%;
+    
+}
+
+h1 {
+    font-family: 'Antipasto Pro';
+    font-size: 35px;
+    color: #5ac5ff;
+    margin-left: 60%;
+}
+
+
+
+#check {
+    display: none;
+}
+
+input:checked~label .hamburguer {
+    transform: rotate(45deg);
+}
+
+input:checked~label .hamburguer:before {
+    transform: rotate(90deg);
+    top: 0;
+}
+
+input:checked~label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+
+.barra {
+    background-color: #ffff;
+    border-radius:10px;
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    transition: all .2s linear;
+    left: -300px;
+}
+
+#check:checked~.barra {
+    transform: translateX(300px);
+}
+
+.itens-barra {
+    margin-top: 100px;
+    border:none;
+    padding:80px;
+    width:100%;
+    border-radius:10px;
+    color:white;
+    font-size:15px
+}
+
+
+
+.AgendaText {
+    font-family: 'Antipasto Pro';
+    color: #383838;
+    margin-left: 216px;
+    margin-top: 220px;
+}
+
+.nome {
+    color: #a2a2a2;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 250px;
+    margin-left: 216px;
+    padding-right: 50px;
+    background-image: url(imagens/user.png);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 10px) left;
+    padding-left: 30px;
+}
+
+.RP {
+    color: #a2a2a2;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+}
+
+#lista {
+    color: #a2a2a2;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 250px;
+    margin-left: 216px;
+}
+
+.RM {
+    color: #a2a2a2;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+}
+
+.data {
+    color: #a2a2a2;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 250px;
+    margin-left: 216px;
+}
+    
+    .btn-confirmar {
+        background-color: #5ac5ff;
+        color: #ffffff;
+        font-size: 20px;
+        margin-left: 260px;
+        border: none;
+        border-radius: 25px;
+        height: 50px;
+        width: 200px;
+        cursor: pointer;
+    }
+
+.ViddaBarra {
+    font-family: 'Simply Rounded';
+    width: 147px;
+    height: 47px;
+    color: #383838;
+    display: flex;
+    margin-left: 10px;
+    top: 100px;
+}
+
+.Subtitle {
+    font-family: 'Antipasto Pro';
+    width: 250px;
+    height: 29px;
+    color: #a2a2a2;
+    display: flex;
+    margin-left: 10px;
+    top: 100px;
+}
+
+.btn-agendamentos {
+    font-family: 'Antipasto Pro';
+    font-size: 18px;
+    color: #383838;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-agendar {
+    font-family: 'Antipasto Pro';
+    font-size: 18px;
+    color: #383838;
+    border: none;
+    cursor: pointer;
+}
+
+#logo {
+    padding: 10px;
+    top: 100px;
+}
+
+.menu {
+    background-color: #ffff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+}
+
+.hamburguer {
+    position: relative;
+    display: block;
+    background: #000;
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    left: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+    background: #000;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+    top: -10px;
+}
+.hamburguer:after {
+    bottom: -10px;
+}

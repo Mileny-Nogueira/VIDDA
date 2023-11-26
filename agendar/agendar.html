@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Vidda</title>
+    <link rel="stylesheet" href="agendar.css">
+    <script type="text/javascript" src="agendar.js"></script>
+</head>
+<body>
+    <input type="checkbox"  id="check">
+        <label for="check">
+
+            <div class="menu">
+                <span class="hamburguer"></span>
+            </div>
+        </label>
+
+    <div class="barra">
+        <img src="imagens/logo.png" id="logo" alt="Vidda" width="50" height="50" title="Vidda"/>
+        <h2 class="ViddaBarra">VIDDA</h2>
+        <h4 class="Subtitle">AGENDAMENTOS & CONSULTAS</h4>
+        <hr size="1" width="95%">
+        <div class="itens-barra">
+            <button class="btn-agendamentos">AGENDAMENTOS</button>
+            
+            <br> 
+            <br>
+            <button class="btn-agendar">AGENDAR CONSULTAS</button>
+        </div>
+    </div>
+    
+    <h2 id="agendamentos">AGENDAR CONSULTA</h2>
+            <h1>LISTA DE HORÁRIOS</h1>
+   
+    <p class="AgendaText">Complete os dados para finalizar o agendamento</p>
+    
+    <form action="agendar">
+        <input type="text" class="nome" placeholder="Nome"> <input type="text" class="RP" placeholder="RP">
+        <br> <br>
+        <input id="lista" list="especialidades" placeholder="Especialidade"> <input type="text" class="RM" placeholder="RM">   
+        <datalist id="especialidades">
+            <option value="Nutrição">Nutrição</option>
+            <option value="Serviço Social">Serviço Social</option>
+            <option value="Psicologia">Psicologia</option>    
+            <option value="Neurologia">Neurologia</option>
+            <option value="Educação física">Educação física</option>
+            <option value="Pedagogia">Pedagogia</option>
+            <option value="Fonoaudiologia">Fonoaudiologia</option>
+            <option value="Enfermagem">Enfermagem</option>
+        </datalist>
+        <br><br>
+        <input type="datetime-local" class="data">
+    </form>
+    <br><br>
+    <button class="btn-confirmar">AGENDAR</button>
+    
+
+   
+</body>
+</html>
