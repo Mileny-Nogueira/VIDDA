@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Atividade de Layout para Web em que aplica-se os conceitos de usabilidade e UX">
+        <meta name="author" content="Mileny Nogueira Nascimento">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="icon" href="https://www.agecefrio.com.br/novo-site/app/icones/cadastro-branco.png" type="image/x-icon">
+        <script src="loginPaciente.js"></script>
+        <title>Login - Paciente</title>
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/antipasto-pro');
+            @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+            @import url('https://fonts.cdnfonts.com/css/simply-rounded');
+            *{
+                margin: 0;
+                padding: 0;
+                border: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+            }
+            body {
+                background-color: #D9D9D9;
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            main {
+                width: 70%;
+                height: 550px;
+                background-color: #fff;
+                border-radius: 30px;
+                display: flex;
+                overflow: hidden;
+            }
+            .metadeContainer{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            #formulario > h1{
+                width: 100%;
+                font-family: 'Simply Rounded', sans-serif;
+                text-align: center;
+                margin-bottom: 20px;
+                color: #5AC5FF;
+            }
+            form{
+                height: auto;
+                margin: 0 20px;
+                display: flex;
+                flex-direction: column;
+            }
+            .textCampo{
+                background-color: #ECECEC;
+                height: 40px;
+                border-radius: 5px;
+                width: 100%;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 18px;
+                color: #A2A2A2;
+                padding-left: 13px;
+                outline: 0;
+            }
+            input::placeholder, select{
+                color: #A2A2A2;
+            }
+            .containerGenero{
+                border: 2px solid #A2A2A2;
+                border-radius: 5px;
+                padding: 15px 0;
+                display: flex;
+                justify-content: space-around;
+                position: relative;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 18px;
+                color: #A2A2A2;
+                margin: 10px 0 15px 0;
+            }
+            .containerGenero > label{
+                position: absolute;
+                background-color: #fff;
+                color: #A2A2A2;
+                top: -14px;
+                left: 10px;
+                padding: 0 6px;
+                font-weight: bold;
+            }
+            button[type="button"]{
+                padding: 12px 20px;
+                background-color: #5AC5FF;
+                color: #fff;
+                font-size: 20px;
+                font-family: 'Quicksand', sans-serif;
+                border-radius: 30px;
+                margin: 10px auto;
+                cursor: pointer;
+                transition: 0.6s;
+            }
+            button[type="button"]:hover{
+                background-color: #fff;
+                outline: 1px solid #5AC5FF;
+                color: #5AC5FF;
+            }
+            #esqueceuSenha{
+                color: #A2A2A2;
+                padding: 5px;
+                margin: 20px auto;
+                border-bottom: 1px solid #A2A2A2;
+                transition: 0.6s;
+                font-family: 'Quicksand', sans-serif;;
+            }
+            #esqueceuSenha:hover{
+                color: #808080;
+                border-bottom: 1px solid #808080;
+            }
+            .inputWrapper{
+                background-color: #ECECEC;
+                height: 40px;
+                border-radius: 5px;
+                margin-bottom: 15px;
+                gap: 6px;
+                display: flex;
+                align-items: center;
+            }
+            .inputWrapper > input{
+                font-family: 'Quicksand', sans-serif;
+                font-size: 18px;
+                color: #A2A2A2;
+                padding-left: 13px;
+                background-color: transparent;
+                width: 92%;
+                border: none;
+            }
+            .inputWrapper input:focus-visible{
+                outline: none;
+            }
+            .inputWrapper i{
+                color: #A2A2A2;
+            }
+            .verSenha{
+                display: flex;
+                margin: 0 0 10px 5px;
+            }
+            .verSenha > p{
+                font-family: 'Quicksand', sans-serif;
+                font-size: 18px;
+                color: #A2A2A2;
+                margin-left: 5px;
+            }
+            #mensagem{
+                font-family: 'Quicksand', sans-serif;
+                color: #c20000;
+                font-weight: bold;
+                margin: 5px auto;
+                font-size: 15px;
+                
+            }
+            #gradienteLateral{
+                background: linear-gradient(rgb(90,197,255), rgb(0,85,173));
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: #FFF;
+            }
+            #gradienteLateral > h1{
+                font-family: 'Simply rounded', sans-serif;
+                margin-bottom: 20px;
+            }
+            #gradienteLateral > p{
+                width: 320px;
+                text-align: center;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            #gradienteLateral > a {
+                color: #FFF;
+                padding: 12px 30px;
+                font-size: 20px;
+                font-family: 'Quicksand', sans-serif;
+                border: 1px solid #FFF;
+                border-radius: 30px;
+                transition: 0.6s;
+            }
+            #gradienteLateral > a:hover {
+                color: #5AC5FF;
+                background-color: #FFF;
+            }
+            
+
+            /*Tablet*/
+            @media screen and (max-width: 800px){
+                body{
+                    background: linear-gradient(rgb(90,197,255), rgb(0,85,173));
+                }
+                #gradienteLateral{
+                    display: none;
+                }
+                .metadeContainer{
+                    width: 100%;
+                }
+                .textCampo, .inputWrapper input, label, .verSenha > p{
+                    font-size: 16px;
+                }
+            }
+            /*Celular*/
+            @media screen and (max-width: 375px){
+                body{
+                    background-image: none;
+                }
+                main{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 0;
+                }
+                .textCampo, .inputWrapper input, label, .verSenha > p{
+                    font-size: 14px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="metadeContainer" id="formulario">
+                <h1>Login</h1>
+                <form name="login">
+                    <div class="inputWrapper">
+                        <input type="email" id="email" name="txtEmail" placeholder="E-mail" maxlength="255" required>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="inputWrapper">
+                        <input type="password" id="senha" name="txtSenha" class="textCampo" placeholder="Senha" maxlength="6" oninput="this.value = this.value.replace(/[^0-9.]/g, '');" required>
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <div class="verSenha">
+                        <input type="checkbox" onclick="mostrarOcultarSenha()">
+                        <p>Mostrar senha</p>
+                    </div>
+                    <div id="mensagem"></div>
+                    <a href="#" id="esqueceuSenha">Esqueceu sua senha?</a>
+                    <button type="button" id="submit" onclick="buscar(event, this)">ENTRAR</button>
+                    
+                </form>
+            </div>
+            <div class="metadeContainer" id="gradienteLateral">
+                <h1>Olá, paciente!</h1>
+                <p>Você é novo por aqui? Crie uma conta com seus dados pessoais e aproveite todos os nossos serviços.</p>
+                <a href="../cadastro/cadastroPaciente.html">CADASTRAR</a>
+            </div>
+        </main>
+        <script>
+            function mostrarOcultarSenha(){
+                var senha = document.getElementById("senha");
+                if(senha.type=="password"){
+                    senha.type = "text";
+                }else{
+                    senha.type = "password";
+                }
+            }
+        </script>
+    </body>
+</html>
