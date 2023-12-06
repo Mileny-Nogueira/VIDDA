@@ -227,8 +227,8 @@
                         <i class="fa-solid fa-user"></i>
                     </div>
                     <div class="alinhaRow">
-                        <input type="text" id="celular" class="textCampo" name="txtCelular" placeholder="Celular" maxlength="11" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required>
-                        <input type="text" id="cpf" class="textCampo" name="txtCpf" placeholder="CPF" maxlength="11" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required>
+                        <input type="text" id="celular" class="textCampo" name="txtCelular" placeholder="Celular" maxlength="14" onkeyup="mascaraCelular(this)" oninput="validarSomenteNumeros(this)" required>
+                        <input type="text" id="cpf" class="textCampo" name="txtCpf" placeholder="CPF" maxlength="14" onkeyup="mascaraCpf(this)" oninput="validarSomenteNumeros(this)" required>
                     </div>
                     <div class="inputWrapper">
                         <input type="email" id="email" name="txtEmail" placeholder="E-mail" maxlength="255" required>

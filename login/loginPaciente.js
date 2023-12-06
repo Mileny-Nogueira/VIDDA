@@ -33,7 +33,7 @@ function mostrarResposta(data){
         const mensagem = document.getElementById("mensagem");
         mensagem.textContent =  data.data;     
     } else {
-        location.href = "../index.html"; //mudar de index para a página que o paulo criou                   
+        const email = document.getElementById("email");
+        window.location = "file:///C:/Users/Mileny/OneDrive/Área%20de%20Trabalho/site_vidda/index.html?email="+email.value; 
     }
 }
-      

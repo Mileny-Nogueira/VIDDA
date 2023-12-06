@@ -130,7 +130,7 @@
             #registro, #cpf{
                 width: 50%;
             }
-            button[type="submit"]{
+            button[type="button"]{
                 padding: 12px 20px;
                 background-color: #FD90C0;
                 color: #fff;
@@ -141,7 +141,7 @@
                 cursor: pointer;
                 transition: 0.6s;
             }
-            button[type="submit"]:hover{
+            button[type="button"]:hover{
                 background-color: #fff;
                 outline: 1px solid #FD90C0;
                 color: #FD90C0;
@@ -246,7 +246,7 @@
                     </div>
                     <div class="alinhaRow">
                         <input type="password" id="senha" name="txtSenha" class="textCampo" maxlength="6" placeholder="Senha" oninput="this.value = this.value.replace(/[^0-9.]/g, '');" required>
-                        <input type="text" id="cpf" name="txtCpf" class="textCampo" placeholder="CPF" maxlength="11" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required>
+                        <input type="text" id="cpf" name="txtCpf" class="textCampo" placeholder="CPF" maxlength="14" onkeyup="mascaraCpf(this)" oninput="validarSomenteNumeros(this)" required>
                     </div>
                     <div class="verSenha">
                         <input type="checkbox" onclick="mostrarOcultarSenha()">

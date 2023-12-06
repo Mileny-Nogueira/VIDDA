@@ -56,3 +56,15 @@ function mostrarResposta(data, form){
         
     }
 }
+
+function validarSomenteNumeros(input) {
+    input.value = input.value.replace(/[^0-9]/g, '');
+}
+
+function mascaraCpf(cpfInput) {
+    cpfInput.value = cpfInput.value.replace(/(\d{3})(\d{3})(\d{3})(\d{0,2})/, '$1.$2.$3-$4'); 
+}
+
+function mascaraCelular(celularInput){
+    celularInput.value = celularInput.value.replace(/(\d{2})(\d{5})(\d{4})/, '($1)$2-$3');
+}

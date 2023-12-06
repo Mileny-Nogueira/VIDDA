@@ -56,3 +56,11 @@ function mostrarResposta(data, form){
         alert("Erro ao realizar o cadastro! \n\nInconsistências:\n" + data.data);
     }
 }
+
+function validarSomenteNumeros(input) {
+    input.value = input.value.replace(/[^0-9]/g, '');
+}
+
+function mascaraCpf(cpfInput) {
+    cpfInput.value = cpfInput.value.replace(/(\d{3})(\d{3})(\d{3})(\d{0,2})/, '$1.$2.$3-$4'); 
+}
