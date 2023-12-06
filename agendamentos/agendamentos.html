@@ -2,56 +2,74 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Vidda</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agendamentos</title>
         <link rel="stylesheet" href="agendamentos.css">
+        <link rel="shortcut icon" href="../src/images/iconVidda.png">
     </head>
     <body>
-        <input type="checkbox"  id="check">
-        <label for="check">
-
-            <div class="menu">
-                <span class="hamburguer"></span>
+        <nav id="menu-lateral">
+            <div id="header-menu">
+                <img src="../src/images/logo-vidda.png" alt="imagem da logo com fundo cinza escuro">
+                <div>
+                    <h1>VIDDA</h1>
+                    <h2>AGENDAMENTOS & CONSULTAS</h2>
+                </div>
             </div>
-        </label>
+            <ul class="lista-paginas">
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img src="../src/images/iconInfo.png" alt="ícone de informações"></span>
+                        <span class="txt-link">AGENDAMENTOS</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img src="../src/images/iconAgenda.png" alt="ícone de agenda"></span>
+                        <span class="txt-link">AGENDAR CONSULTAS</span>
+                    </a>
+                </li>
+            </ul>
+            <hr/>
+            <ul class="footer-menu">
+                
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><img src="../src/images/power.png" alt="ícone de paciente que leva ao login"></span>
+                        <span class="txt-link">LOGOUT</span>
+                    </a>
+                </li>
 
-        <div class="barra">
-            <img src="imagens/logo.png" id="logo" alt="Vidda" width="50" height="50" title="Vidda"/>
-            <h2 class="ViddaBarra">VIDDA</h2>
-            <h4 class="Subtitle">AGENDAMENTOS & CONSULTAS</h4>
-            <hr size="1" width="95%">
-            <div class="itens-barra">
-                <button class="btn-agendamentos">AGENDAMENTOS</button>
-            
-                <br> 
-                <br>
-                <button class="btn-agendar">AGENDAR CONSULTAS</button>
-            </div>
-        </div>
-    
-        <h2 id="agendamentos">AGENDAMENTOS</h2>
+            </ul>
+        </nav>
+        <img src="../src/images/setaMenu.png" alt="seta que ao ser clicada expande o menu lateral" id="btnMenu">
    
         <script type="text/javascript" src="agendamentos.js"></script>
 
-        <div id = "DadosPaciente" class="Tabela">
+        
             <form name = "form1">
-                <div class="pt1">
-                    <p class="nome">Nome:</p>     
-                    <p class="telefone">Celular:</p>  
-                    <p class="dn">Data de nascimento:</p>
-                </div>        
-                <div class="pt2">
-                    <p class="email">E-mail:</p>  
-                    <p class="cpf">CPF:</p>
-                </div>       
-                         
-         
-                <hr size="1" width="100%">      
+                        
+                <div id="DadosPaciente">
+                    <div class="pt1">
+                        <p class="nome">Nome:</p> <p id="txtnome"></p>   
+                        <p class="telefone">Celular:</p> <p id="txttelefone"></p> 
+                        <p class="dn">Data de nascimento:</p> <p id="txtdn"></p>
+                    </div>        
+                    <div class="pt2">
+                        <p class="email">E-mail:</p> <p id="txtemail"></p> 
+                        <p class="cpf">CPF:</p> <p id="txtcpf"></p>
+                    </div> 
+                    
+                </div>
+                    
                 <div id="HistoricoAgendamentos"><h3>HISTÓRICO DE AGENDAMENTOS</h3></div>
                         
                 </div>
         
             </form>  
-        </div>
+        
+
+
 
     </body>
 </html>

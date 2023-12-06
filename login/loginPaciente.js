@@ -27,13 +27,16 @@ function buscar(event, form){
         document.getElementById("mensagem").textContent = "Complete todos os campos!";
     }
 }
+
+
 function mostrarResposta(data){
-    console.log(data) ;       
+    console.log(data) ;
     if(data.status == "error"){ 
         const mensagem = document.getElementById("mensagem");
-        mensagem.textContent =  data.data;     
+        mensagem.textContent =  data.data;
     } else {
-        location.href = "../index.html"; //mudar de index para a página que o paulo criou                   
+        const email = document.getElementById("email");
+        window.location = "file:///C:/Users/paulo/OneDrive/Área%20de%20Trabalho/VIDDA_NEW/VIDDA/agendamentos?minhaVariavel="+email.value; 
     }
 }
       

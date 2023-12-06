@@ -1,43 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Vidda</title>
-    <link rel="stylesheet" href="agendar.css">
-    <script type="text/javascript" src="agendar.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agendar Consultas</title>
+        <link rel="stylesheet" href="agendar.css">
+        <link rel="shortcut icon" href="../src/images/iconVidda.png">
+        
+    </head>
 <body>
-    <input type="checkbox"  id="check">
-        <label for="check">
-
-            <div class="menu">
-                <span class="hamburguer"></span>
+    <nav id="menu-lateral">
+        <div id="header-menu">
+            <img src="../src/images/logo-vidda.png" alt="imagem da logo com fundo cinza escuro">
+            <div>
+                <h1>VIDDA</h1>
+                <h2>AGENDAMENTOS & CONSULTAS</h2>
             </div>
-        </label>
-
-    <div class="barra">
-        <img src="imagens/logo.png" id="logo" alt="Vidda" width="50" height="50" title="Vidda"/>
-        <h2 class="ViddaBarra">VIDDA</h2>
-        <h4 class="Subtitle">AGENDAMENTOS & CONSULTAS</h4>
-        <hr size="1" width="95%">
-        <div class="itens-barra">
-            <button class="btn-agendamentos">AGENDAMENTOS</button>
-            
-            <br> 
-            <br>
-            <button class="btn-agendar">AGENDAR CONSULTAS</button>
         </div>
+        <ul class="lista-paginas">
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><img src="../src/images/iconInfo.png" alt="ícone de informações"></span>
+                    <span class="txt-link">AGENDAMENTOS</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><img src="../src/images/iconAgenda.png" alt="ícone de agenda"></span>
+                    <span class="txt-link">AGENDAR CONSULTAS</span>
+                </a>
+            </li>
+        </ul>
+        <hr/>
+        <ul class="footer-menu">
+            
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><img src="../src/images/power.png" alt="ícone de paciente que leva ao login"></span>
+                    <span class="txt-link">LOGOUT</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+    <img src="../src/images/setaMenu.png" alt="seta que ao ser clicada expande o menu lateral" id="btnMenu">
+    <div id="Title">
+        <h3 id="agendamentos">AGENDAR CONSULTA</h3>
+            <h1>HORÁRIOS DE ATENDIMENTO</h1>
     </div>
+
     
-    <h2 id="agendamentos">AGENDAR CONSULTA</h2>
-            <h1>LISTA DE HORÁRIOS</h1>
    
-    <p class="AgendaText">Complete os dados para finalizar o agendamento</p>
+
+            <p class="AgendaText">Complete os dados para finalizar o agendamento</p>
     
-    <form action="agendar">
-        <input type="text" class="nome" placeholder="Nome"> <input type="text" class="RP" placeholder="RP">
-        <br> <br>
-        <input id="lista" list="especialidades" placeholder="Especialidade"> <input type="text" class="RM" placeholder="RM">   
+    <form name="agendar">
+        <input id="lista" name="txtesp" list="especialidades" placeholder="Especialidade"> <input type="text" name="txtrp"class="RP" placeholder="RP">   
         <datalist id="especialidades">
             <option value="Nutrição">Nutrição</option>
             <option value="Serviço Social">Serviço Social</option>
@@ -47,14 +65,16 @@
             <option value="Pedagogia">Pedagogia</option>
             <option value="Fonoaudiologia">Fonoaudiologia</option>
             <option value="Enfermagem">Enfermagem</option>
-        </datalist>
+        </datalist> 
+        <br> <br>
+        <input type="datetime-local" name="txtdata" class="data"> <input type="text" name="txtrm" class="RM" placeholder="RM">
         <br><br>
-        <input type="datetime-local" class="data">
+        <input type="button" name="btconfirmar" value="AGENDAR" class="btn-confirmar" onclick="AGENDAR(event, this)">
     </form>
     <br><br>
-    <button class="btn-confirmar">AGENDAR</button>
     
-
+    
+    <script type="text/javascript" src="agendar.js"></script>
    
 </body>
 </html>
