@@ -1,8 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/antipasto-pro');
 @import url('https://fonts.cdnfonts.com/css/simply-rounded');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
-
 body{
     align-items: center;
     display: flex;
@@ -25,11 +23,6 @@ body{
     text-decoration: none;
 }
 
-
-
-
-
-/*MENU LATERAL*/
 #menu-lateral{
     width: 60px;
     height: 90%;
@@ -116,7 +109,6 @@ body{
     position: relative;
 }
 
-
 .footer-menu > .item-menu > a > .icon{
     margin-left: 6px;
 }
@@ -133,42 +125,28 @@ body{
     transform: rotate(0deg);
 }
 
-
-.pt1 {
+.pt1, .container-dados-paciente, .pt2 {
     font-family: 'Quicksand', sans-serif;
     color: #383838;
     display: flex;
-    margin-top: 1%;
-    margin-left: 0%;
-}
-.telefone {
-    margin-top: 1%;
-    margin-left: 45%;
-}
-.dn {
-    margin-top: 1%;
-    margin-left: 20%;
-}
-
-.pt2 {
-    font-family: 'Quicksand', sans-serif; 
-    color: #383838;
     display: flex;
-    margin-top: 1%;
-    margin-left: 0%;
-}
-.cpf {
-    margin-top: 1%;
-    margin-left: 45%;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
 }
 
-.nome {
-    font-family: 'Antipasto Pro'; 
-    color: #383838;
-   
-    margin-top: 1%;
+.pt1, .pt2{
+    margin: 10px 0;
 }
 
+
+#DadosPaciente {
+    padding: 20px;
+}
+
+.nome, .telefone, .dn, .email, .cpf{
+    margin-right: 10px;
+}
 #DadosPaciente > hr{
     width: 90%;
     border-bottom: 1px solid #D9D9D9;
@@ -185,14 +163,12 @@ h3 {
     margin-top: 2%;
 }
 
-
-
 table {
     width: 100%;
 }
+
 th {
     background-color: #5ac5ff ;
-    
     font-family: 'Antipasto Pro';
     color: #ffff;
     padding: 10px;
@@ -207,17 +183,10 @@ th {
     padding-bottom: 20px;
 }
 
-
-
-
 form{
     background-color: #f7f7f7;            
-    
-    width: 1188px;
+    width: 90%;
     height: 600px;
-    
-    
-    
     padding: 10px;
     border-radius:15px;
 }

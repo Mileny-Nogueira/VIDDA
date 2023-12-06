@@ -6,6 +6,7 @@
         <title>Agendamentos</title>
         <link rel="stylesheet" href="agendamentos.css">
         <link rel="shortcut icon" href="../src/images/iconVidda.png">
+        <script type="text/javascript" src="agendamentos.js"></script>
     </head>
     <body>
         <nav id="menu-lateral">
@@ -24,7 +25,7 @@
                     </a>
                 </li>
                 <li class="item-menu">
-                    <a href="#">
+                    <a href="../agendar/agendar.html">
                         <span class="icon"><img src="../src/images/iconAgenda.png" alt="ícone de agenda"></span>
                         <span class="txt-link">AGENDAR CONSULTAS</span>
                     </a>
@@ -34,7 +35,7 @@
             <ul class="footer-menu">
                 
                 <li class="item-menu">
-                    <a href="#">
+                    <a href="../index.html">
                         <span class="icon"><img src="../src/images/power.png" alt="ícone de paciente que leva ao login"></span>
                         <span class="txt-link">LOGOUT</span>
                     </a>
@@ -42,34 +43,33 @@
 
             </ul>
         </nav>
-        <img src="../src/images/setaMenu.png" alt="seta que ao ser clicada expande o menu lateral" id="btnMenu">
+        <img src="../src/images/setaMenu.png" alt="seta que ao ser clicada expande o menu lateral" id="btnMenu" onclick="click()">
    
-        <script type="text/javascript" src="agendamentos.js"></script>
-
-        
-            <form name = "form1">
-                        
+            <form name = "form1">  
                 <div id="DadosPaciente">
                     <div class="pt1">
-                        <p class="nome">Nome:</p> <p id="txtnome"></p>   
-                        <p class="telefone">Celular:</p> <p id="txttelefone"></p> 
-                        <p class="dn">Data de nascimento:</p> <p id="txtdn"></p>
+                        <div class="container-dados-paciente">
+                            <p class="nome">Nome:</p><p id="txtnome"></p>
+                        </div>
+                        <div class="container-dados-paciente">
+                            <p class="cpf">CPF:</p> <p id="txtcpf"></p>
+                        </div>
+                        
+                        <p class="dn">Data de nascimento:</p> 
                     </div>        
                     <div class="pt2">
-                        <p class="email">E-mail:</p> <p id="txtemail"></p> 
-                        <p class="cpf">CPF:</p> <p id="txtcpf"></p>
-                    </div> 
-                    
-                </div>
-                    
-                <div id="HistoricoAgendamentos"><h3>HISTÓRICO DE AGENDAMENTOS</h3></div>
+                        <div class="container-dados-paciente">
+                            <p class="email">E-mail:</p> <p id="txtemail"></p>
+                        </div>
+                        <div class="container-dados-paciente">
+                            <p class="telefone">Celular:</p><p id="txttelefone"></p>
+                        </div>
                         
+                        <p id="txtdn"></p>
+                    </div> 
                 </div>
-        
-            </form>  
-        
-
-
-
+                <div id="HistoricoAgendamentos"><h3>HISTÓRICO DE AGENDAMENTOS</h3></div>
+                </div>
+            </form> 
     </body>
 </html>

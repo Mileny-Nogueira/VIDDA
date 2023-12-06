@@ -21,12 +21,14 @@ function AGENDAR(event, form){
     const rp = document.agendar.txtrp.value;
     const dataconsulta = document.agendar.txtdata.value;
     const rm = document.agendar.txtrm.value;
+    const horaconsulta = document.agendar.txthora.value;
     //uma lista para armazenar conjunto de dados obtidos
     const dados = {   
         id_paciente: rp, 
         especialidade_consulta: esp,
         id_especialista: rm,
         data_consulta: dataconsulta,
+        hora_consulta: horaconsulta,
     };
     //uma lista para dados de configuração
     const options = {

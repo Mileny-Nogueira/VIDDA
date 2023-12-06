@@ -19,7 +19,7 @@
         </div>
         <ul class="lista-paginas">
             <li class="item-menu">
-                <a href="#">
+                <a href="../agendamentos/agendamentos.html">
                     <span class="icon"><img src="../src/images/iconInfo.png" alt="ícone de informações"></span>
                     <span class="txt-link">AGENDAMENTOS</span>
                 </a>
@@ -35,7 +35,7 @@
         <ul class="footer-menu">
             
             <li class="item-menu">
-                <a href="#">
+                <a href="../index.html">
                     <span class="icon"><img src="../src/images/power.png" alt="ícone de paciente que leva ao login"></span>
                     <span class="txt-link">LOGOUT</span>
                 </a>
@@ -67,11 +67,15 @@
             <option value="Enfermagem">Enfermagem</option>
         </datalist> 
         <br> <br>
-        <input type="datetime-local" name="txtdata" class="data"> <input type="text" name="txtrm" class="RM" placeholder="RM">
+        <input type="date" name="txtdata" class="data"> <input type="text" name="txtrm" class="RM" placeholder="RM">
+        <br><br>
+        <input type="time" name="txthora" class="hora">
         <br><br>
         <input type="button" name="btconfirmar" value="AGENDAR" class="btn-confirmar" onclick="AGENDAR(event, this)">
     </form>
     <br><br>
+
+    <img src="../src/images/tbhorario.png" alt="imagem da logo com fundo cinza escuro">
     
     
     <script type="text/javascript" src="agendar.js"></script>
