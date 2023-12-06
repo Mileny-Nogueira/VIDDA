@@ -27,11 +27,13 @@ function buscar(event, form){
         document.getElementById("mensagem").textContent = "Complete todos os campos!";
     }
 }
+
+
 function mostrarResposta(data){
-    console.log(data) ;       
+    console.log(data) ;
     if(data.status == "error"){ 
         const mensagem = document.getElementById("mensagem");
-        mensagem.textContent =  data.data;     
+        mensagem.textContent =  data.data;
     } else {
         const email = document.getElementById("email");
         window.location = "file:///C:/Users/Mileny/OneDrive/Área%20de%20Trabalho/site_vidda/index.html?email="+email.value; 

@@ -1,25 +1,141 @@
 @import url('https://fonts.cdnfonts.com/css/antipasto-pro');
 @import url('https://fonts.cdnfonts.com/css/simply-rounded');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 
 body{
+    align-items: center;
+    display: flex;
     margin: 0;
     padding: 0;
-    background-color:#d9d9d9;
+    justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #d9d9d9;
+        padding-left: 60px;
+        overflow-x: hidden;
+    
 }        
 
-h2{
-    font-family: 'Antipasto Pro';
-    font-size: 50px;
-    color: #383838; 
-    height: 60px;
-    width: 371px;
-    margin-left: 198px;
-    margin-top: 63px;
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
+
+
+
+
+/*MENU LATERAL*/
+#menu-lateral{
+    width: 60px;
+    height: 90%;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 20px 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
+}
+
+#menu-lateral.expandir{
+    width: 300px;
+}
+
+#header-menu{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #D9D9D9;
+    width: 90%;
+}
+
+#header-menu > div{
+    margin-left: 10px;
+}
+
+#header-menu > div > h1{
+    font-family: 'Simply Rounded', sans-serif;
+    font-size: 25px;
+    color: #383838;
+}
+
+#header-menu > div > h2{
+    font-family: 'Antipasto Pro', sans-serif;
+    font-size: 15px;
+    color: #A2A2A2;
+}
+
+.lista-paginas{
+    margin-bottom: 500px;
+    list-style-type: none;
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.item-menu > a{
+    color: #383838;
+    font-family: 'Antipasto Pro', sans-serif;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.item-menu{
+    padding: 10px 0;
+}
+
+.txt-link{
+    margin-left: 10px;
+}
+
+#menu-lateral > hr{
+    width: 90%;
+    border-bottom: 1px solid #D9D9D9;
+    margin: 20px 0;
+}
+
+.footer-menu{
+    width: 90%;
+    list-style-type: none;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+
+.footer-menu > .item-menu > a > .icon{
+    margin-left: 6px;
+}
+
+.footer-menu > .item-menu{
+    width: 190px;
+}
+
+#btnMenu{
+    position: fixed;
+    left: 70px;
+    top: 10px;
+    cursor: pointer;
+    transform: rotate(0deg);
+}
+
+
 .pt1 {
-    font-family: 'Antipasto Pro'; 
+    font-family: 'Quicksand', sans-serif;
     color: #383838;
     display: flex;
     margin-top: 1%;
@@ -31,11 +147,11 @@ h2{
 }
 .dn {
     margin-top: 1%;
-    margin-left: 31%;
+    margin-left: 20%;
 }
 
 .pt2 {
-    font-family: 'Antipasto Pro'; 
+    font-family: 'Quicksand', sans-serif; 
     color: #383838;
     display: flex;
     margin-top: 1%;
@@ -53,6 +169,12 @@ h2{
     margin-top: 1%;
 }
 
+#DadosPaciente > hr{
+    width: 90%;
+    border-bottom: 1px solid #D9D9D9;
+    margin: 20px 0;
+}
+
 h3 {
     font-family: 'Antipasto Pro';
     font-size: 25px;
@@ -61,158 +183,51 @@ h3 {
     width: 414px;
     margin-left: 38%;
     margin-top: 2%;
-    
 }
 
 
 
-
+table {
+    width: 100%;
+}
 th {
     background-color: #5ac5ff ;
-    width: 100%;
+    
     font-family: 'Antipasto Pro';
     color: #ffff;
     padding: 10px;
 }
 
-
-
-#check {
-    display: none;
+#HistoricoAgendamentos {
+    width: 100%;
 }
 
-input:checked~label .hamburguer {
-    transform: rotate(45deg);
+#DadosPaciente{
+    border-bottom: 1px solid #383838;
+    padding-bottom: 20px;
 }
 
-input:checked~label .hamburguer:before {
-    transform: rotate(90deg);
-    top: 0;
-}
 
-input:checked~label .hamburguer:after {
-    transform: rotate(90deg);
-    bottom: 0;
-}
-
-.barra {
-    background-color: #ffff;
-    border-radius:10px;
-    height: 100%;
-    width: 300px;
-    position: fixed;
-    transition: all .2s linear;
-    left: -300px;
-}
-
-#check:checked~.barra {
-    transform: translateX(300px);
-}
-
-.itens-barra {
-    margin-top: 100px;
-    border:none;
-    padding:80px;
-    width:100%;
-    border-radius:10px;
-    color:white;
-    font-size:15px
-}
 
 
 form{
-    background-color: #ffff;            
-    position: absolute;
+    background-color: #f7f7f7;            
+    
     width: 1188px;
     height: 600px;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    
+    
+    
     padding: 10px;
     border-radius:15px;
 }
-input{
-    padding:15px;
-    border:none;
-    outline:none;            
-    border-radius:5px;
-    font-size:15px
-}
 
 
-.ViddaBarra {
-    font-family: 'Simply Rounded';
-    width: 147px;
-    height: 47px;
-    color: #383838;
-    display: flex;
-    margin-left: 10px;
-    top: 100px;
-}
 
-.Subtitle {
-    font-family: 'Antipasto Pro';
-    width: 250px;
-    height: 29px;
-    color: #a2a2a2;
-    display: flex;
-    margin-left: 10px;
-    top: 100px;
-}
 
-.btn-agendamentos {
-    font-family: 'Antipasto Pro';
-    font-size: 18px;
-    color: #383838;
-}
 
-.btn-agendar {
-    font-family: 'Antipasto Pro';
-    font-size: 18px;
-    color: #383838;
-}
 
-#logo {
-    padding: 10px;
-    top: 100px;
-}
 
-.menu {
-    background-color: #ffff;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    position: fixed;
-    top: 25px;
-    left: 25px;
-    z-index: 1;
-}
 
-.hamburguer {
-    position: relative;
-    display: block;
-    background: #000;
-    width: 30px;
-    height: 2px;
-    top: 29px;
-    left: 15px;
-    transition: 0.5s ease-in-out;
-}
 
-.hamburguer:before,
-.hamburguer:after {
-    background: #000;
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transition: 0.5s ease-in-out;
-}
 
-.hamburguer:before {
-    top: -10px;
-}
-.hamburguer:after {
-    bottom: -10px;
-}
